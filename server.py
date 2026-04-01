@@ -184,5 +184,9 @@ async def main() -> None:
         )
 
 
-if __name__ == "__main__":
+def main_sync() -> None:
     asyncio.run(main())
+
+
+if __name__ == "__main__":
+    main_sync()
