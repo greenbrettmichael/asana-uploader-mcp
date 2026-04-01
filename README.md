@@ -26,14 +26,14 @@ pip install git+https://github.com/greenbrettmichael/asana-uploader-mcp.git
 ### 2. Add to Claude Code
 
 ```bash
-ASANA_ACCESS_TOKEN=your_token_here claude mcp add asana-attachments -- asana-uploader-mcp
+ASANA_ACCESS_TOKEN=your_token_here claude mcp add asana-uploader-mcp -- asana-uploader-mcp
 ```
 
 Or set the token in your environment first and reference it:
 
 ```bash
 export ASANA_ACCESS_TOKEN=your_token_here
-claude mcp add asana-attachments -e ASANA_ACCESS_TOKEN=$ASANA_ACCESS_TOKEN -- asana-uploader-mcp
+claude mcp add asana-uploader-mcp -e ASANA_ACCESS_TOKEN=$ASANA_ACCESS_TOKEN -- asana-uploader-mcp
 ```
 
 That's it — restart Claude Code and the tools will be available.
@@ -45,7 +45,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "asana-attachments": {
+    "asana-uploader-mcp": {
       "command": "asana-uploader-mcp",
       "env": {
         "ASANA_ACCESS_TOKEN": "your_token_here"

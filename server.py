@@ -13,7 +13,7 @@ from mcp.server.stdio import stdio_server
 
 ASANA_BASE_URL = "https://app.asana.com/api/1.0"
 
-server = Server("asana-attachments")
+server = Server("asana-uploader-mcp")
 
 
 def _token() -> str:
